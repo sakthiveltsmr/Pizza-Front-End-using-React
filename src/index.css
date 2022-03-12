@@ -22,3 +22,7 @@ code {
   color: black !important;
   font-size: bold;
 }
+
+h1 {
+  font-size: 20px !important;
+}

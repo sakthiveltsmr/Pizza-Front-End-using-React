@@ -21,6 +21,11 @@ export default function pizza({ pizza }) {
         </div>
         <div className="w-100">
           <p>Price</p>
+          <select>
+            {pizza.prices.map((price) => {
+              //   return <option value={price}>{price}</option>;
+            })}
+          </select>
         </div>
       </div>
     </div>

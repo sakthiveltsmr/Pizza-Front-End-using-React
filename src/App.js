@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./component/Navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <h2>HEY PIZZA</h2>
+      <Navbar />
     </div>
   );
 }

@@ -4,7 +4,17 @@ import pizza from "../../pizzadata";
 function Home() {
   return (
     <div>
-      <h2>{pizza.length}</h2>
+      <div className="row">
+        {pizza.map((pizza) => {
+          return (
+            <div className="col-md-4">
+              <div>
+                <pizza />
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

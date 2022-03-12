@@ -1,15 +1,16 @@
 import React from "react";
-import pizza from "../../pizzadata";
+import Pizzas from "../../pizzadata";
+import Pizza from "../../component/pizza/pizza";
 
 function Home() {
   return (
     <div>
       <div className="row">
-        {pizza.map((pizza) => {
+        {Pizzas.map((p) => {
           return (
             <div className="col-md-4">
               <div>
-                <pizza />
+                <Pizza pizza={p} />
               </div>
             </div>
           );

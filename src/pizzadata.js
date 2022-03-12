@@ -1,4 +1,4 @@
-const pizza = [
+const Pizzas = [
   {
     name: "PEPPER BARBECUE CHICKEN",
     varients: ["small", "medium", "large"],
@@ -90,4 +90,4 @@ const pizza = [
   },
 ];
 
-export default pizza;
+export default Pizzas;

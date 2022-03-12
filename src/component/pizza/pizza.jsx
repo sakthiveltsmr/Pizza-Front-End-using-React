@@ -20,10 +20,10 @@ export default function pizza({ pizza }) {
           </select>
         </div>
         <div className="w-100">
-          <p>Price</p>
+          <p>Quatity</p>
           <select>
-            {pizza.prices.map((price) => {
-              //   return <option value={price}>{price}</option>;
+            {[...Array(10).keys()].map((x, i) => {
+              return <option value={i + 1}>{i + 1}</option>;
             })}
           </select>
         </div>

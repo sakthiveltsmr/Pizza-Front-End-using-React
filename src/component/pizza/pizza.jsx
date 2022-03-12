@@ -1,20 +1,27 @@
 import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 
 export default function Pizza({ pizza }) {
   const [varient, setvarient] = useState(1);
   const [quantity, setquantity] = useState("small");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div
       style={{ margin: "70px" }}
       className="shadow-lg p-3 mb-5 bg-white rounded"
     >
-      <h1>{pizza.name}</h1>
-      <img
-        src={pizza.image}
-        alt="img"
-        className="img-fluid"
-        style={{ height: "200px", width: "200px" }}
-      />
+      <div onClick={handleShow}>
+        <h1>{pizza.name}</h1>
+        <img
+          src={pizza.image}
+          alt="img"
+          className="img-fluid"
+          style={{ height: "200px", width: "200px" }}
+        />
+      </div>
       <div className="flex-container">
         <div className="w-100 m-1">
           <p>Varients</p>
@@ -43,12 +50,35 @@ export default function Pizza({ pizza }) {
       </div>
       <div className="flex-container">
         <div className="m-1 w-100">
-          <h1>Price:{pizza.prices[0][varient] * [quantity]}</h1>
+          <h1 className="mt-1">
+            Price:{pizza.prices[0][varient] * [quantity]} Rs/-
+          </h1>
         </div>
         <div className="m-1 w-100">
           <button className="btn btn-danger">ADD TO CART</button>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{pizza.name}</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <img
+            src={pizza.image}
+            alt="img"
+            className="img-fluid"
+            style={{ height: "400px" }}
+          />
+          <p>{pizza.description}</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <button className="btn btn-danger" onClick={handleClose}>
+            close
+          </button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }

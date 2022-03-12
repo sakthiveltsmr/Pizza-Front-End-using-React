@@ -8,7 +8,7 @@ function Home() {
       <div className="row">
         {Pizzas.map((p) => {
           return (
-            <div className="col-md-4">
+            <div className="col-md-4 p-3">
               <div>
                 <Pizza pizza={p} />
               </div>

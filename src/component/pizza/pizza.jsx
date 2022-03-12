@@ -4,7 +4,10 @@ export default function Pizza({ pizza }) {
   const [varient, setvarient] = useState(1);
   const [quantity, setquantity] = useState("small");
   return (
-    <div>
+    <div
+      style={{ margin: "70px" }}
+      className="shadow-lg p-3 mb-5 bg-white rounded"
+    >
       <h1>{pizza.name}</h1>
       <img
         src={pizza.image}
@@ -13,17 +16,22 @@ export default function Pizza({ pizza }) {
         style={{ height: "200px", width: "200px" }}
       />
       <div className="flex-container">
-        <div className="w-100">
+        <div className="w-100 m-1">
           <p>Varients</p>
-          <select value={varient} onChange={(e) => setvarient(e.target.value)}>
+          <select
+            className="form-control"
+            value={varient}
+            onChange={(e) => setvarient(e.target.value)}
+          >
             {pizza.varients.map((varient) => {
               return <option value={varient}>{varient}</option>;
             })}
           </select>
         </div>
-        <div className="w-100">
+        <div className="w-100 m-1">
           <p>Quatity</p>
           <select
+            className="form-control"
             value={quantity}
             onChange={(e) => setquantity(e.target.value)}
           >

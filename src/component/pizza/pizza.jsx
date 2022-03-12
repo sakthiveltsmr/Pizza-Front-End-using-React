@@ -10,6 +10,19 @@ export default function pizza({ pizza }) {
         className="img-fluid"
         style={{ height: "200px", width: "200px" }}
       />
+      <div className="flex-container">
+        <div className="w-100">
+          <p>Varients</p>
+          <select>
+            {pizza.varients.map((varient) => {
+              return <option value={varient}>{varient}</option>;
+            })}
+          </select>
+        </div>
+        <div className="w-100">
+          <p>Price</p>
+        </div>
+      </div>
     </div>
   );
 }

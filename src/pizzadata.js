@@ -1,4 +1,4 @@
-[
+const pizza = [
   {
     name: "PEPPER BARBECUE CHICKEN",
     varients: ["small", "medium", "large"],
@@ -13,20 +13,7 @@
     image: "https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg",
     description: "Papper Barbecue Chicken I cheese",
   },
-  {
-    name: "",
-    varients: ["small", "medium", "large"],
-    prices: [
-      {
-        small: 200,
-        medium: 350,
-        large: 400,
-      },
-    ],
-    category: "nonveg",
-    image: "https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg",
-    description: "Papper Barbecue Chicken I cheese",
-  },
+
   {
     name: "CHICKEN SAUSAGE",
     varients: ["small", "medium", "large"],
@@ -102,3 +89,5 @@
       "Grilled Chicken Rashers I Peri-Peri Chicken I Onion I Capsicum",
   },
 ];
+
+export default pizza;

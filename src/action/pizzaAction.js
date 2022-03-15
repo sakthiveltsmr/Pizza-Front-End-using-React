@@ -7,6 +7,8 @@ export const getAllPizzas = () => (dispatch) => {
     console.log(response);
     dispatch({ type: "GET_PIZZAS_SUCCESS" });
   } catch (err) {
+    dispatch({ type: "GET_PIZZAS_SUCCESS" });
+
     console.log(err);
   }
 };

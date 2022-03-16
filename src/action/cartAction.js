@@ -1,5 +1,5 @@
 export const addToCart = (pizza, quantity, varient) => (dispatch) => {
-  var cartitem = {
+  var cartItem = {
     name: pizza.name,
     _id: pizza._id,
     image: pizza.image,
@@ -9,5 +9,5 @@ export const addToCart = (pizza, quantity, varient) => (dispatch) => {
     price: pizza.prices[0][varient] * quantity,
   };
 
-  dispatch({ type: "ADD_TO_CART", payload: cartitem });
+  dispatch({ type: "ADD_TO_CART", payload: cartItem });
 };

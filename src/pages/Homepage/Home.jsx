@@ -6,21 +6,33 @@ import { getAllPizzas } from "../../action/pizzaAction";
 
 function Home() {
   const dispatch = useDispatch();
+
+  const pizzasstate = useSelector((state) => state.getAllPizzasReducer);
+
+  const { pizzas, error, loading } = pizzasstate;
+
   useEffect(() => {
     dispatch(getAllPizzas());
   }, []);
   return (
     <div>
       <div className="row">
-        {Pizzas.map((p) => {
-          return (
-            <div className="col-md-4 p-3">
-              <div>
-                <Pizza pizza={p} />
+        {loading ? (
+          <h1>loading</h1>
+        ) : error ? (
+          <h1>something went wrong</h1>
+        ) : (
+          Pizzas.map((p) => {
+            return (
+              <div className="col-md-4 p-3">
+                <div>
+                  <Pizza pizza={p} />
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+        )}
+        ;
       </div>
     </div>
   );

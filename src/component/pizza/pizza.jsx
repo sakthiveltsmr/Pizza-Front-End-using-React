@@ -8,6 +8,9 @@ export default function Pizza({ pizza }) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  function Addtocart() {}
+
   return (
     <div
       // style={{ margin: "70px" }}
@@ -55,7 +58,9 @@ export default function Pizza({ pizza }) {
           </h1>
         </div>
         <div className="m-1 w-100">
-          <button className="btn btn-danger">ADD TO CART</button>
+          <button className="btn btn-danger" onClick={Addtocart()}>
+            ADD TO CART
+          </button>
         </div>
       </div>
       <Modal show={show} onHide={handleClose}>

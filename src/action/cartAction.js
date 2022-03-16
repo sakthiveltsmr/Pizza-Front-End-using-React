@@ -8,4 +8,6 @@ export const addtoCart = (pizza, quantity, varient) => (dispatch) => {
     prices: pizza.prices,
     price: pizza.prices[0][varient] * quantity,
   };
+
+  dispatch({ type: "ADD_TO_CART", payload: cartitem });
 };

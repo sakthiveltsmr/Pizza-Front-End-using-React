@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Pizzas from "../../pizzadata";
+// import Pizzas from "../../pizzadata";
 import Pizza from "../../component/pizza/pizza";
 import { getAllPizzas } from "../../action/pizzaAction";
 
@@ -18,7 +18,7 @@ function Home() {
     <div>
       <div className="row">
         {loading ? (
-          <h1>loading</h1>
+          <h1>loading....</h1>
         ) : error ? (
           <h1>something went wrong</h1>
         ) : (

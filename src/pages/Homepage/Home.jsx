@@ -16,7 +16,7 @@ function Home() {
   }, []);
   return (
     <div>
-      <div className="row">
+      <div className="row justify-content-center">
         {loading ? (
           <h1>loading....</h1>
         ) : error ? (
@@ -24,7 +24,7 @@ function Home() {
         ) : (
           pizzas.map((p) => {
             return (
-              <div className="col-md-4 p-3" key={p._id}>
+              <div className="col-md-3 p-3 m-3" key={p._id}>
                 <div>
                   <Pizza pizza={p} />
                 </div>

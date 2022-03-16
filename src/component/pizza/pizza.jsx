@@ -12,7 +12,7 @@ export default function Pizza({ pizza }) {
   const handleShow = () => setShow(true);
   const dispatch = useDispatch();
 
-  function Addtocart() {
+  function addtocart() {
     dispatch(addToCart(pizza, quantity, varient));
   }
 
@@ -63,7 +63,7 @@ export default function Pizza({ pizza }) {
           </h1>
         </div>
         <div className="m-1 w-100">
-          <button className="btn btn-danger" onClick={Addtocart()}>
+          <button className="btn btn-danger" onClick={addtocart()}>
             ADD TO CART
           </button>
         </div>

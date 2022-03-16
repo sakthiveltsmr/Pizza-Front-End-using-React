@@ -14,7 +14,9 @@ const cartItems = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
   : [];
 const initialState = {
-  cartItems: cartItems,
+  cartReducer: {
+    cartItems: cartItems,
+  },
 };
 const composeEnhancers = composeWithDevTools({});
 const store = createStore(

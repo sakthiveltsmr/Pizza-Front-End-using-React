@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../action/cartAction";
 
 export default function Pizza({ pizza }) {
-  const [varient, setvarient] = useState(1);
-  const [quantity, setquantity] = useState("small");
+  const [varient, setvarient] = useState("small");
+  const [quantity, setquantity] = useState(1);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

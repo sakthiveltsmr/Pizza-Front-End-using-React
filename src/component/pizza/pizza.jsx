@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../action/cartAction";
 
 export default function Pizza({ pizza }) {
   const [varient, setvarient] = useState(1);
@@ -8,8 +10,11 @@ export default function Pizza({ pizza }) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const dispatch = useDispatch();
 
-  function Addtocart() {}
+  function Addtocart() {
+    dispatch(addToCart(pizza, quantity, varient));
+  }
 
   return (
     <div

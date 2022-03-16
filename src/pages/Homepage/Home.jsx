@@ -24,8 +24,8 @@ function Home() {
         ) : (
           Pizzas.map((p) => {
             return (
-              <div className="col-md-4 p-3">
-                <div key={p._id}>
+              <div className="col-md-4 p-3" key={p._id}>
+                <div>
                   <Pizza pizza={p} />
                 </div>
               </div>

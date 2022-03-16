@@ -11,5 +11,5 @@ export const addToCart = (pizza, quantity, varient) => (dispatch, getState) => {
 
   dispatch({ type: "ADD_TO_CART", payload: cartItem });
   const cartItems = getState().cartReducer.cartItems;
-  localStorage.setItem("cartItems", JSON.stringify(cartItem));
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
 };

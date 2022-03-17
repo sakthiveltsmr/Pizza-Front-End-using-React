@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../../action/cartAction";
 import { deleteFromCart } from "../../action/cartAction";
-import Checkout from "../components/Checkout";
+// import Checkout from "../../component/";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Navigate } from "react-router-dom";
@@ -27,7 +27,7 @@ export default function Cartscreen() {
     }, 2000);
   }
   if (redirect) {
-    return <Redirect to="/orders" />;
+    return <Navigate to="/orders" />;
   }
   return (
     <div>
@@ -91,7 +91,7 @@ export default function Cartscreen() {
 
         <div className="col-md-4 text-right">
           <h2 style={{ fontSize: "45px" }}>SubTotal : {subtotal} /-</h2>
-          <Checkout subtotal={subtotal} />
+          {/* <Checkout subtotal={subtotal} /> */}
         </div>
       </div>
     </div>

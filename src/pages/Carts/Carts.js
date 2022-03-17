@@ -15,10 +15,13 @@ export default function Carts() {
                 <div>
                   <h1>{item.name}</h1>
                   <h1>
-                    Price:{item.quantity}*{item.varient}={item.price}
+                    Price:{item.quantity}*{item.prices[0][item.varient]}=
+                    {item.price}
                   </h1>
                 </div>
-                <div></div>
+                <div>
+                  <img src={item.image} />
+                </div>
                 <div></div>
               </div>
             );

@@ -5,7 +5,7 @@ export default function Carts() {
   const cartItems = cartstate.cartItems;
   return (
     <div>
-      <div class="row justify-content-center">
+      <div className="row justify-content-center">
         <div className="col-md-6">
           <h2 style={{ fontSize: "30px" }}>My Cart</h2>
           {cartItems.map((item) => {
@@ -15,7 +15,7 @@ export default function Carts() {
                 <div>
                   <h1>{item.name}</h1>
                   <h1>
-                    Price:{item.quantity} * {item.varient}={item.price}
+                    Price:{item.quantity}*{item.varient}={item.price}
                   </h1>
                 </div>
                 <div></div>

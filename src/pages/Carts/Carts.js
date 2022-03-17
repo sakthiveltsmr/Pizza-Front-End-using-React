@@ -43,23 +43,30 @@ export default function Cartscreen() {
                     {item.name} [{item.varient}]
                   </h1>
                   <h1>
-                    Price : {item.quantity} * {item.prices[0][item.varient]} ={" "}
+                    Price : {item.quantity} * {item.prices[0][item.varient]} =
+                    {""} {""} ₹{""}
                     {item.price}
                   </h1>
                   <h1 style={{ display: "inline" }}>Quantity : </h1>
                   <i
                     className="fa fa-plus"
                     aria-hidden="true"
+                    style={{ cursor: "pointer", color: "green" }}
                     onClick={() => {
                       dispatch(
                         addToCart(item, item.quantity + 1, item.varient)
                       );
                     }}
                   ></i>
+                  {""}
+                  {""}
                   <b>{item.quantity}</b>
+                  {""}
+                  {""}
                   <i
                     className="fa fa-minus"
                     aria-hidden="true"
+                    style={{ cursor: "pointer", color: "red" }}
                     onClick={() => {
                       dispatch(
                         addToCart(item, item.quantity - 1, item.varient)
@@ -73,10 +80,16 @@ export default function Cartscreen() {
                   <img
                     src={item.image}
                     alt="img"
-                    style={{ height: "80px", height: "80px" }}
+                    style={{
+                      height: "80px",
+                      cursor: "pointer",
+                    }}
                   />
                 </div>
-                <div className="m-1 w-100">
+                <div
+                  className="m-1 w-100"
+                  style={{ cursor: "pointer", color: "red" }}
+                >
                   <i
                     className="fa fa-trash mt-5"
                     aria-hidden="true"
@@ -91,7 +104,9 @@ export default function Cartscreen() {
         </div>
 
         <div className="col-md-4 text-right">
-          <h2 style={{ fontSize: "45px" }}>SubTotal : {subtotal} /-</h2>
+          <h2 style={{ fontSize: "45px", color: "darkgreen" }}>
+            SubTotal : ₹{subtotal}/-
+          </h2>
           <Checkout subtotal={subtotal} />
         </div>
       </div>

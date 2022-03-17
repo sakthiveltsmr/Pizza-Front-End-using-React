@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../action/cartAction";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,6 +29,7 @@ export default function Pizza({ pizza }) {
         <h1>{pizza.name}</h1>
         <img
           src={pizza.image}
+          alt="img"
           className="img-fluid"
           style={{ height: "200px", width: "200px" }}
         />
@@ -69,7 +70,7 @@ export default function Pizza({ pizza }) {
       <div className="flex-container">
         <div className="m-1 w-100">
           <h1 className="mt-1">
-            Price : {pizza.prices[0][varient] * quantity} Rs/-
+            Price :₹ {pizza.prices[0][varient] * quantity} /-
           </h1>
         </div>
         <div className="m-1 w-100">
@@ -87,6 +88,7 @@ export default function Pizza({ pizza }) {
         <Modal.Body>
           <img
             src={pizza.image}
+            alt="img"
             className="img-fluid"
             style={{ height: "400px" }}
           />

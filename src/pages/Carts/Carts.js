@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../../action/cartAction";
 import { deleteFromCart } from "../../action/cartAction";
-// import Checkout from "../../component/";
+import Checkout from "../../component/Checkout/Checkout";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Navigate } from "react-router-dom";
@@ -72,6 +72,7 @@ export default function Cartscreen() {
                 <div className="m-1 w-100">
                   <img
                     src={item.image}
+                    alt="img"
                     style={{ height: "80px", height: "80px" }}
                   />
                 </div>
@@ -91,7 +92,7 @@ export default function Cartscreen() {
 
         <div className="col-md-4 text-right">
           <h2 style={{ fontSize: "45px" }}>SubTotal : {subtotal} /-</h2>
-          {/* <Checkout subtotal={subtotal} /> */}
+          <Checkout subtotal={subtotal} />
         </div>
       </div>
     </div>

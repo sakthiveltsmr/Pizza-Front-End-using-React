@@ -13,20 +13,20 @@ export default function Register() {
               required
             />
             <input
-              type="text"
-              placeholder="name"
+              type="email"
+              placeholder="email"
               className="form-control"
               required
             />
             <input
               type="text"
-              placeholder="name"
+              placeholder="password"
               className="form-control"
               required
             />
             <input
               type="text"
-              placeholder="name"
+              placeholder="confirm password"
               className="form-control"
               required
             />

@@ -32,7 +32,38 @@ h1 {
 select {
   box-shadow: none !important;
 }
-
 input {
-  margin-top: 50px !important;
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
+.adminfunctions {
+  padding: 10px;
+  background-color: rgb(1, 1, 77);
+}
+
+.adminfunctions li {
+  list-style-type: none !important;
+  display: inline !important;
+  color: white !important;
+}
+.adminfunctions li a {
+  color: white !important;
+  padding: 20px;
+}
+td,
+th,
+tr {
+  text-align: left;
+}
+.login {
+  background-image: url("");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 90vh;
+}
+.register {
+  background-image: url("https://images3.alphacoders.com/121/1213707.jpg");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 90vh;
 }

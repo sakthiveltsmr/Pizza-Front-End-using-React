@@ -78,7 +78,7 @@ export default function Register() {
                 setcpassword(e.target.value);
               }}
             />
-            <button onClick={register} className="btn mt-3 mb-3">
+            <button onClick={register} className="btn btn-primary mt-3 mb-3">
               REGISTER
             </button>
             <br />

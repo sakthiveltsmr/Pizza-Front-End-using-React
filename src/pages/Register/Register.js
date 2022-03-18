@@ -39,7 +39,6 @@ export default function Register() {
           </h2>
           <div>
             <input
-              required
               type="text"
               placeholder="name"
               className="form-control"
@@ -47,6 +46,7 @@ export default function Register() {
               onChange={(e) => {
                 setname(e.target.value);
               }}
+              required
             />
             <input
               required

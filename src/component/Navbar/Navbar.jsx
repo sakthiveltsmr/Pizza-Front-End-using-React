@@ -26,7 +26,7 @@ function Navbar() {
         >
           <ul className="navbar-nav mr-auto">
             <li className="nav-item ">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/login">
                 Login
               </a>
             </li>

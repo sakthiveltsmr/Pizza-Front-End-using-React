@@ -8,8 +8,26 @@ export default function Register() {
           <div>
             <input
               type="text"
-              placeholder="enter ur name"
-              className="form-controll"
+              placeholder="name"
+              className="form-control"
+              required
+            />
+            <input
+              type="text"
+              placeholder="name"
+              className="form-control"
+              required
+            />
+            <input
+              type="text"
+              placeholder="name"
+              className="form-control"
+              required
+            />
+            <input
+              type="text"
+              placeholder="name"
+              className="form-control"
               required
             />
           </div>

@@ -24,7 +24,10 @@ export default function Login() {
   return (
     <div className="login">
       <div className="row justify-content-center mt-5">
-        <div className="col-md-5 mt-5 text-left shadow-lg p-3 mb-5 bg-white rounded">
+        <div
+          className="col-md-5 mt-5 text-left shadow-lg p-3 mb-5 bg-white rounded"
+          style={{ marginTop: "150px" }}
+        >
           <h2 className="text-center m-2" style={{ fontSize: "35px" }}>
             Login
           </h2>
@@ -54,7 +57,7 @@ export default function Login() {
               }}
             />
 
-            <button onClick={login} className="btn mt-3 mb-3">
+            <button onClick={login} className="btn btn-primary mt-3 mb-3">
               LOGIN
             </button>
             <br />

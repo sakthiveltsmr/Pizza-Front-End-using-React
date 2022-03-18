@@ -3,8 +3,8 @@ import React from "react";
 export default function Register() {
   return (
     <div>
-      <div class="row justify-content-center">
-        <div className="col-md-5">
+      <div class="row justify-content-center mt-5">
+        <div className="col-md-5 mt-5">
           <div>
             <input
               type="text"

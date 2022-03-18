@@ -29,7 +29,10 @@ export default function Register() {
   return (
     <div className="register">
       <div className="row justify-content-center mt-5">
-        <div className="col-md-5 mt-5 text-left shadow-lg p-3 mb-5 bg-white rounded">
+        <div
+          className="col-md-5  text-left shadow-lg p-3 mb-5 bg-white rounded"
+          style={{ marginTop: "140px" }}
+        >
           {loading && <Loading />}
           {success && <Success success="User Registered Successfully" />}
           {error && <Error error="Email already registred" />}

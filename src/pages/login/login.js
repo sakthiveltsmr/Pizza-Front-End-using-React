@@ -25,7 +25,7 @@ export default function Login() {
     <div className="login">
       <div className="row justify-content-center mt-5">
         <div
-          className="col-md-5 mt-5 text-left shadow-lg p-3 mb-5 bg-white rounded"
+          className="col-md-5  text-left shadow-lg p-3 mb-5 bg-white rounded"
           style={{ marginTop: "150px" }}
         >
           <h2 className="text-center m-2" style={{ fontSize: "35px" }}>

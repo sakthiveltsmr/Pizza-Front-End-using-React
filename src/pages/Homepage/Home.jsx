@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import Pizzas from "../../pizzadata";
 import Pizza from "../../component/pizza/pizza";
 import { getAllPizzas } from "../../action/pizzaAction";
+import Filter from "../../component/Filter/Filter";
 
 function Home() {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function Home() {
   }, []);
   return (
     <div>
+      <Filter />
       <div className="row justify-content-center">
         {loading ? (
           <h1>loading....</h1>

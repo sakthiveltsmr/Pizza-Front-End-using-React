@@ -7,7 +7,7 @@ export default function Filter() {
   const [searchkey, setsearchkey] = useState("");
   const [category, setcategory] = useState("all");
   return (
-    <div className="container">
+    <div className="container filter">
       <div class="row justify-content-center shadow-lg p-3 mb-5 bg-white rounded ">
         <div className="col-md-3 w-100">
           <input

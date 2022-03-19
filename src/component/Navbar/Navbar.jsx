@@ -77,12 +77,12 @@ export default function Navbar() {
         >
           <ul className="navbar-nav mr-auto">
             {currentUser ? (
-              <div className="dropdown mt-2">
+              <div className="dropdown show mt-2">
                 <a
                   style={{ color: "black", textDecoration: "none" }}
                   className="dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
+                  role="button"
+                  id="dropdownMenuLink"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -91,7 +91,7 @@ export default function Navbar() {
                 </a>
                 <div
                   className="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton"
+                  aria-labelledby="dropdownMenuLink"
                 >
                   {/* {isAdmin ? (
                     <li className="nav-item">

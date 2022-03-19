@@ -68,7 +68,7 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon">
-            <i style={{ color: "black" }} className="fas fa-bars"></i>
+            {/* <i style={{ color: "black" }} className="fas fa-bars"></i> */}
           </span>
         </button>
         <div
@@ -79,7 +79,7 @@ export default function Navbar() {
             {currentUser ? (
               <div className="dropdown mt-2">
                 <a
-                  style={{ color: "black" }}
+                  style={{ color: "black", textDecoration: "none" }}
                   className="dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton"
@@ -93,13 +93,13 @@ export default function Navbar() {
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  {isAdmin ? (
+                  {/* {isAdmin ? (
                     <li className="nav-item">
                       <a className="dropdown-item" href="/admin">
                         Dashboard
                       </a>
                     </li>
-                  ) : null}
+                  ) : null} */}
                   <a className="dropdown-item" href="/orders">
                     Orders
                   </a>

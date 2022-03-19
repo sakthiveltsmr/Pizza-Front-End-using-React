@@ -67,3 +67,8 @@ tr {
   background-size: cover !important;
   height: 90vh;
 }
+/* .filter {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+} */

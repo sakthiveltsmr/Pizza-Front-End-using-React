@@ -28,6 +28,16 @@ export default function Filter() {
             <option value="nonveg">Non Veg</option>
           </select>
         </div>
+        <div className="col-md-3 w-100">
+          <button
+            className="btn btn-info w-100 mt-2"
+            onClick={() => {
+              dispatch(filterPizzas(searchkey, category));
+            }}
+          >
+            FILTER
+          </button>
+        </div>
       </div>
     </div>
   );

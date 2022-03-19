@@ -15,6 +15,19 @@ export default function Filter() {
             placeholder="search your dishes"
           />
         </div>
+        <div className="col-md-3 w-100">
+          <select
+            className="form-control w-100 mt-2"
+            value={category}
+            onChange={(e) => {
+              setcategory(e.target.value);
+            }}
+          >
+            <option value="all">All</option>
+            <option value="veg">Veg</option>
+            <option value="nonveg">Non Veg</option>
+          </select>
+        </div>
       </div>
     </div>
   );

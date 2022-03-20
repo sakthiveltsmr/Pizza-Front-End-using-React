@@ -36,7 +36,21 @@ export default function Pizzalist() {
                   <td>
                     Small:{pizza.prices[0]["small"]}
                     <br />
-                    Medium:{Pizza}
+                    Medium:{pizza.prices[0]["medium"]}
+                    <br />
+                    Large:{pizza.prices[0]["large"]}
+                  </td>
+                  <td>{pizza.category}</td>
+                  <td>
+                    <i
+                      className="fa fa-trash m-1"
+                      onClick={() => {
+                        dispatch(deletePizza(pizza._id));
+                        <Link to={`/admin/editpizza/${pizza._id}`}>
+                          <i className="fa fa-edit m-1"></i>
+                        </Link>;
+                      }}
+                    ></i>
                   </td>
                 </tr>
               );

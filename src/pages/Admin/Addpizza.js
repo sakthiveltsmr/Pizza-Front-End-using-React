@@ -35,5 +35,15 @@ export default function Addpizza() {
     console.log(pizza);
     dispatch(addPizza(pizza));
   };
-  return <div>Addpizza</div>;
+  return (
+    <div>
+      <div className="text-left shadow-lg p-3 mb-5 bg-white rounded">
+        <h1>Addpizza</h1>
+
+        {loading && <Loading />}
+        {error && <Error error="something went wrong" />}
+        {success && <Success success="New Piza added Successfully" />}
+      </div>
+    </div>
+  );
 }

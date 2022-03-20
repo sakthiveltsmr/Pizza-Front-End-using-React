@@ -7,6 +7,11 @@ import Filter from "../../component/Filter/Filter";
 import Loading from "../../component/loading/Loading";
 export default function Pizzalist() {
   const dispatch = useDispatch();
+  const pizzasstate = useSelector((state) => state.getAllPizzasReducer);
+  const { pizzas, error, Loading } = pizzasstate;
+  useEffect(() => {
+    dispatch(getAllPizzas());
+  }, []);
   return (
     <div>
       <h2>Pizzalist</h2>

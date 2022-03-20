@@ -28,14 +28,19 @@ export default function Pizzalist() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>name</td>
-            <td>
-              Small:{Pizza.prices[0]["small"]}
-              <br />
-              Medium:{Pizza}
-            </td>
-          </tr>
+          {pizzas &&
+            pizzas.map((pizza) => {
+              return (
+                <tr>
+                  <td>{pizza.name}</td>
+                  <td>
+                    Small:{pizza.prices[0]["small"]}
+                    <br />
+                    Medium:{Pizza}
+                  </td>
+                </tr>
+              );
+            })}
         </tbody>
       </table>
     </div>

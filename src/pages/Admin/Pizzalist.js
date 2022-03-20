@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { deletePizza, getAllPizzas } from "../../action/pizzaAction";
 import Error from "../../component/Error/Error";
-import Filter from "../../component/Filter/Filter";
+// import Filter from "../../component/Filter/Filter";
 import Loading from "../../component/loading/Loading";
 export default function Pizzalist() {
   const dispatch = useDispatch();

@@ -23,7 +23,7 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon">
-            {/* <i style={{ color: "black" }} className="fas fa-bars"></i> */}
+            <i style={{ color: "black" }} className="fas fa-bars"></i>
           </span>
         </button>
         <div

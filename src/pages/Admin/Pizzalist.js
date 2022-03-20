@@ -14,7 +14,7 @@ export default function Pizzalist() {
   }, []);
   return (
     <div>
-      <h2>Pizzalist</h2>
+      <h2>Pizzas list</h2>
 
       <table className="table table-bordered table-responsive-sm">
         <thead className="thead-dark">

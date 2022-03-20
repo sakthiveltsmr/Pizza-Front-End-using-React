@@ -8,19 +8,21 @@ import Loading from "../../component/loading/Loading";
 export default function Pizzalist() {
   const dispatch = useDispatch();
   const pizzasstate = useSelector((state) => state.getAllPizzasReducer);
-  const { pizzas, error, Loading } = pizzasstate;
+  const { pizzas, error, loading } = pizzasstate;
   useEffect(() => {
     dispatch(getAllPizzas());
   }, []);
   return (
     <div>
       <h2>Pizzas list</h2>
+      {loading && <Loading />}
+      {error && <Error error="Something went wrong" />}
 
       <table className="table table-bordered table-responsive-sm">
         <thead className="thead-dark">
           <tr>
             <th>Name</th>
-            <th>Price</th>
+            <th>Prices</th>
             <th>Category</th>
             <th>Actions</th>
           </tr>

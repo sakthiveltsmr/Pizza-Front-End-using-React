@@ -48,13 +48,13 @@ export default function Navbar() {
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  {/* {isAdmin ? (
+                  {isAdmin ? (
                     <li className="nav-item">
                       <a className="dropdown-item" href="/admin">
                         Dashboard
                       </a>
                     </li>
-                  ) : null} */}
+                  ) : null}
                   <a className="dropdown-item" href="/orders">
                     Orders
                   </a>

@@ -33,7 +33,11 @@ export default function Checkout({ subtotal }) {
           <button className="btn btn-danger">Pay Now</button>
         </StripeCheckout>
       ) : (
-        <button className="btn btn-primary">Login To Pay</button>
+        <button className="btn btn-primary">
+          <a style={{ color: "white", textDecoration: "none" }} href="/login">
+            Login To Pay
+          </a>
+        </button>
       )}
     </div>
   );

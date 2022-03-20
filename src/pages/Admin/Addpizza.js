@@ -18,5 +18,22 @@ export default function Addpizza() {
 
   const addpizzastate = useSelector((state) => state.addPizzaReducer);
   const { success, error, loading } = addpizzastate;
+
+  const Formhandler = (e) => {
+    e.preventDefault();
+    const pizza = {
+      name,
+      image,
+      descripton,
+      category,
+      prices: {
+        small: smallprice,
+        medium: mediumprice,
+        large: largeprice,
+      },
+    };
+    console.log(pizza);
+    dispatch(addPizza(pizza));
+  };
   return <div>Addpizza</div>;
 }

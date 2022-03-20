@@ -9,5 +9,14 @@ export default function Addpizza() {
   const [name, setname] = useState("");
   const [smallprice, setsmallprice] = useState();
   const [mediumprice, setmediumprice] = useState();
+  const [largeprice, setlargeprice] = useState();
+  const [image, setimage] = useState("");
+  const [descripton, setdescription] = useState("");
+  const [category, setcategory] = useState("");
+
+  const dispatch = useDispatch();
+
+  const addpizzastate = useSelector((state) => state.addPizzaReducer);
+  const { success, error, loading } = addpizzastate;
   return <div>Addpizza</div>;
 }

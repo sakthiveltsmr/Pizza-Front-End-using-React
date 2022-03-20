@@ -52,7 +52,6 @@ export default function Register() {
               required
             />
             <input
-              required
               type="email"
               placeholder="email"
               className="form-control"
@@ -60,26 +59,27 @@ export default function Register() {
               onChange={(e) => {
                 setemail(e.target.value);
               }}
+              required
             />
             <input
               type="password"
               placeholder="password"
               className="form-control"
               value={password}
-              required
               onChange={(e) => {
                 setpassword(e.target.value);
               }}
+              required
             />
             <input
               type="text"
               placeholder="confirm password"
               className="form-control"
               value={cpassword}
-              required
               onChange={(e) => {
                 setcpassword(e.target.value);
               }}
+              required
             />
             <button onClick={register} className="btn btn-primary mt-3 mb-3">
               REGISTER

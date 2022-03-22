@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editPizza, getPizzaById } from "../../action/pizzaAction";
+import Loading from "../../component/loading/Loading";
+import Success from "../../component/Success/Success";
+import Error from "../../component/Error/Error";
 export default function Editpizza() {
   const dispatch = useDispatch();
   const [name, setname] = useState("");

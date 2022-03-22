@@ -13,5 +13,7 @@ export default function Editpizza() {
 
   const getpizzabyidstate = useSelector((state) => state.getPizzaByIdReducer);
   const { pizza, error, loading } = getpizzabyidstate;
+  const editpizzastate = useSelector((state) => state.editPizzaReducer);
+  const { editloading, editerror, editsuccess } = editpizzastate;
   return <div>Editpizza</div>;
 }

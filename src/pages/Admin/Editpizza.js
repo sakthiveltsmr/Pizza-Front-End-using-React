@@ -18,6 +18,7 @@ export default function Editpizza() {
 
   useEffect(() => {
     if (pizza) {
+      console.log(pizza);
       if (pizza._id == match.params.pizzaid) {
         setname(pizza.name);
         setdescription(pizza.description);

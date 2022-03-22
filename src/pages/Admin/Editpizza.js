@@ -10,5 +10,7 @@ export default function Editpizza() {
   const [image, setimage] = useState("");
   const [description, setdescription] = useState("");
   const [category, setcategory] = useState("");
+
+  const getpizzabyidstate = useSelector((state) => state.getPizzaByIdReducer);
   return <div>Editpizza</div>;
 }

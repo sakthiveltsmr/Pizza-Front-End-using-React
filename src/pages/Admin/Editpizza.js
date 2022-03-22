@@ -12,5 +12,6 @@ export default function Editpizza() {
   const [category, setcategory] = useState("");
 
   const getpizzabyidstate = useSelector((state) => state.getPizzaByIdReducer);
+  const { pizza, error, loading } = getpizzabyidstate;
   return <div>Editpizza</div>;
 }

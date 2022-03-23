@@ -7,7 +7,7 @@ import Success from "../../component/Success/Success";
 import Error from "../../component/Error/Error";
 export default function Editpizza() {
   const dispatch = useDispatch();
-  const { id: pizzaid } = useParams();
+  const { pizzaid } = useParams();
   const [name, setname] = useState("");
   const [smallprice, setsmallprice] = useState();
   const [mediumprice, setmediumprice] = useState();

@@ -41,7 +41,7 @@ export default function Addpizza() {
         <h1>Addpizza</h1>
 
         {loading && <Loading />}
-        {error && <Error error="something went wrong" />}
+        {/* {error && <Error error="something went wrong" />} */}
         {success && <Success success="New Piza added Successfully" />}
         <form onSubmit={Formhandler}>
           <input

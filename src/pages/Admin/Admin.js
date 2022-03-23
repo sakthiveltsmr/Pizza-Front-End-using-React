@@ -51,20 +51,6 @@ export default function Admin() {
               </Link>
             </li>
           </ul>
-          {/* <Router> */}
-          {/* <Switch> */}
-          {/* <Route path="/admin/*" component={Userslist} exact />
-            <Route path="/admin/userslist" component={Userslist} exact />
-            <Route path="/admin/orderslist" component={Orderslist} exact />
-            <Route path="/admin/pizzaslist" component={Pizzaslist} exact />
-            <Route path="/admin/addpizza" component={Addpizza} exact />
-            <Route
-              path="/admin/editpizza/:pizzaid"
-              component={Editpizza}
-              exact
-            /> */}
-          {/* </Switch> */}
-          {/* </Router> */}
         </div>
       </div>
     </div>

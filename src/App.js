@@ -21,15 +21,15 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/cart" exact element={<Carts />} />
-          <Route path="/register" exact element={<Register />} />
-          <Route path="/login" exact element={<Login />} />
-          <Route path="/admin" exact element={<Admin />} />
-          <Route path="/orders" exact element={<Order />} />
-          <Route path="/admin/userslist" element={<Userslist />} exact />
-          <Route path="/admin/orderslist" element={<Orderslist />} exact />
-          <Route path="/admin/pizzaslist" element={<Pizzalist />} exact />
-          <Route path="/admin/addpizza" element={<Addpizza />} exact />
+          <Route path="/cart" element={<Carts />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/orders" element={<Order />} />
+          <Route path="/admin/userslist" element={<Userslist />} />
+          <Route path="/admin/orderslist" element={<Orderslist />} />
+          <Route path="/admin/pizzaslist" element={<Pizzalist />} />
+          <Route path="/admin/addpizza" element={<Addpizza />} />
           <Route
             path="/admin/editpizza/:pizzaid"
             element={<Editpizza />}

@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { Navigate } from "react-router-dom";
 export default function Cartscreen() {
   AOS.init();
+
   const [redirect, setRedirect] = useState(false);
   const cartstate = useSelector((state) => state.cartReducer);
   const cartItems = cartstate.cartItems;

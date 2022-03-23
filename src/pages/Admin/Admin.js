@@ -52,8 +52,8 @@ export default function Admin() {
             </li>
           </ul>
           {/* <Router> */}
-          <Switch>
-            <Route path="/admin/*" component={Userslist} exact />
+          {/* <Switch> */}
+          {/* <Route path="/admin/*" component={Userslist} exact />
             <Route path="/admin/userslist" component={Userslist} exact />
             <Route path="/admin/orderslist" component={Orderslist} exact />
             <Route path="/admin/pizzaslist" component={Pizzaslist} exact />
@@ -62,8 +62,8 @@ export default function Admin() {
               path="/admin/editpizza/:pizzaid"
               component={Editpizza}
               exact
-            />
-          </Switch>
+            /> */}
+          {/* </Switch> */}
           {/* </Router> */}
         </div>
       </div>

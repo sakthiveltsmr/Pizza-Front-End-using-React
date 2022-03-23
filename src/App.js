@@ -9,6 +9,11 @@ import Register from "./pages/Register/Register";
 import Login from "./pages/login/login";
 import Order from "./pages/Order/Order";
 import Admin from "./pages/Admin/Admin";
+import Userslist from "./pages/Admin/Userlist";
+import Orderslist from "./pages/Admin/Orderlist";
+import Pizzalist from "./pages/Admin/Pizzalist";
+import Addpizza from "./pages/Admin/Addpizza";
+import Editpizza from "./pages/Admin/Editpizza";
 function App() {
   return (
     <div className="App">
@@ -21,6 +26,12 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/admin" exact component={Admin} />
           <Route path="/orders" exact component={Order} />
+          {/* <Route path="/admin" component={Userslist} exact /> */}
+          <Route path="/admin/userslist" component={Userslist} exact />
+          <Route path="/admin/orderslist" component={Orderslist} exact />
+          <Route path="/admin/pizzaslist" component={Pizzalist} exact />
+          <Route path="/admin/addpizza" component={Addpizza} exact />
+          <Route path="/admin/editpizza/:pizzaid" component={Editpizza} exact />
         </Switch>
       </Router>
     </div>

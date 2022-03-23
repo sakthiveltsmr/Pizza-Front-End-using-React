@@ -56,7 +56,7 @@ export default function Admin() {
             <Route path="/admin/addpizza" element={<Addpizza />} exact />
             <Route
               path="/admin/editpizza/:pizzaid"
-              component={Editpizza}
+              element={<Editpizza />}
               exact
             />
           </Routes>

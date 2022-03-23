@@ -43,14 +43,14 @@ export default function Pizzalist() {
                   <td>{pizza.category}</td>
                   <td>
                     <i
-                      className="fa fa-trash m-1"
+                      className="fa fa-trash m-1 text-danger"
                       onClick={() => {
                         dispatch(deletePizza(pizza._id));
-                        <Link to={`/admin/editpizza/${pizza._id}`}>
-                          <i className="fa fa-edit m-1"></i>
-                        </Link>;
                       }}
                     ></i>
+                    <Link to={`/admin/editpizza/${pizza._id}`}>
+                      <i className="fa fa-edit m-1"></i>
+                    </Link>
                   </td>
                 </tr>
               );

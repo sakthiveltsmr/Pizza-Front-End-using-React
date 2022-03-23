@@ -93,7 +93,7 @@ export default function Addpizza() {
             className="form-control"
             type="text"
             placeholder="description"
-            value={description}
+            value={descripton}
             onChange={(e) => {
               setdescription(e.target.value);
             }}

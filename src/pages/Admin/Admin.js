@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 import Addpizza from "./Addpizza";
 import Editpizza from "./Editpizza";
-import Orderslist from "./Orderslist";
-import Pizzaslist from "./Pizzaslist";
-import Userslist from "./Userslist";
+import Orderslist from "./Orderlist";
+import Pizzaslist from "./Pizzalist";
+import Userslist from "./Userlist";
 
 export default function Admin() {
   const userstate = useSelector((state) => state.loginUserReducer);

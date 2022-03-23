@@ -19,11 +19,11 @@ export default function Editpizza() {
   const getpizzabyidstate = useSelector((state) => state.getPizzaByIdReducer);
   const { pizza, error, loading } = getpizzabyidstate;
   const editpizzastate = useSelector((state) => state.editPizzaReducer);
-  const { editloading, editerror, editsuccess } = editpizzastate;
+  const { editloading, editsuccess } = editpizzastate;
 
   useEffect(() => {
     if (pizza) {
-      if (pizza._id == pizzaid) {
+      if (pizza._id === pizzaid) {
         setname(pizza.name);
         setdescription(pizza.description);
         setcategory(pizza.category);

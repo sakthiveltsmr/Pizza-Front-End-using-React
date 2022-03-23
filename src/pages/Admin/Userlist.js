@@ -7,6 +7,7 @@ import Loading from "../../component/loading/Loading";
 import { deleteUser, getAllUsers } from "../../action/userActions";
 
 export default function Userslist() {
+  // console.log("wellcome to userlist");
   const dispatch = useDispatch();
   const usersstate = useSelector((state) => state.getAllUsersReducer);
   const { error, loading, users } = usersstate;

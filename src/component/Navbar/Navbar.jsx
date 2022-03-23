@@ -5,7 +5,9 @@ export default function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
   const userstate = useSelector((state) => state.loginUserReducer);
   const { currentUser } = userstate;
+  console.log("currentUser :>> ", currentUser);
   const isAdmin = currentUser?.isAdmin;
+  console.log(isAdmin);
   const dispatch = useDispatch();
   return (
     <div>

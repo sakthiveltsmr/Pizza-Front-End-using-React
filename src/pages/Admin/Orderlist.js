@@ -5,6 +5,7 @@ import Error from "../../component/Error/Error";
 // import Filter from "../../component/Filter/Filter";
 import Loading from "../../component/loading/Loading";
 export default function Orderslist() {
+  console.log("haii");
   const dispatch = useDispatch();
   const getordersstate = useSelector((state) => state.getAllOrdersReducer);
   const { loading, error, orders } = getordersstate;

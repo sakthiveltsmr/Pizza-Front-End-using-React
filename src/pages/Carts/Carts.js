@@ -5,9 +5,10 @@ import { deleteFromCart } from "../../action/cartAction";
 import Checkout from "../../component/Checkout/Checkout";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Navigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 export default function Cartscreen() {
   AOS.init();
+  const history = useHistory();
   const [redirect, setRedirect] = useState(false);
   const cartstate = useSelector((state) => state.cartReducer);
   const cartItems = cartstate.cartItems;
@@ -27,7 +28,7 @@ export default function Cartscreen() {
     }, 2000);
   }
   if (redirect) {
-    return <Navigate to="/orders" />;
+    return history.push("/orders");
   }
   return (
     <div>

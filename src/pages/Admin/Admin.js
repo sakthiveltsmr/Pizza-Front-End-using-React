@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import Addpizza from "./Addpizza";
@@ -48,18 +48,10 @@ export default function Admin() {
               </Link>
             </li>
           </ul>
-          <Routes>
-            <Route path="/admin" element={<Userslist />} exact />
-            <Route path="/admin/userslist" element={<Userslist />} exact />
-            <Route path="/admin/orderslist" element={<Orderslist />} exact />
-            <Route path="/admin/pizzaslist" element={<Pizzaslist />} exact />
-            <Route path="/admin/addpizza" element={<Addpizza />} exact />
-            <Route
-              path="/admin/editpizza/:pizzaid"
-              element={<Editpizza />}
-              exact
-            />
-          </Routes>
+          {/* <Routes> */}
+          {/* <Route path="/admin" element={<Userslist />} exact /> */}
+
+          {/* </Routes> */}
         </div>
       </div>
     </div>
